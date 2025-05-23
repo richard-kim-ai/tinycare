@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TinyCare 리페어크림 - 복합 피부 고민, 작지만 확실한 회복을</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>
+tailwind.config={
+theme:{
+extend:{
+colors:{
+primary:'#FF7043',
+secondary:'#FFB74D'
+},
+borderRadius:{
+'none':'0px',
+'sm':'4px',
+DEFAULT:'8px',
+'md':'12px',
+'lg':'16px',
+'xl':'20px',
+'2xl':'24px',
+'3xl':'32px',
+'full':'9999px',
+'button':'8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Noto Sans KR', sans-serif;
+color: #333;
+}
+.hero-gradient {
+background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+}
+input[type="checkbox"] {
+appearance: none;
+width: 1.25rem;
+height: 1.25rem;
+border: 2px solid #4F9D9D;
+border-radius: 4px;
+position: relative;
+}
+input[type="checkbox"]:checked {
+background-color: #4F9D9D;
+}
+input[type="checkbox"]:checked::after {
+content: "";
+position: absolute;
+top: 0.2rem;
+left: 0.35rem;
+width: 0.4rem;
+height: 0.7rem;
+border: solid white;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.accordion-content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease;
+}
+.accordion-content.active {
+max-height: 200px;
+}
+</style>
+</head>
+<body class="bg-white">
+<!-- 네비게이션 -->
+<nav class="bg-white shadow-sm py-4">
+<div class="container mx-auto px-6 flex items-center justify-between">
+<a href="#" class="text-2xl font-['Pacifico'] text-primary">TinyCare</a>
+<div class="hidden md:flex items-center space-x-8">
+<a href="#problem" class="text-gray-700 hover:text-primary transition">why?</a>
+<a href="#solution" class="text-gray-700 hover:text-primary transition">특징</a>
+<a href="#review" class="text-gray-700 hover:text-primary transition">후기</a>
+<a href="#usage" class="text-gray-700 hover:text-primary transition">사용법</a>
+<a href="#faq" class="text-gray-700 hover:text-primary transition">FAQ</a>
+</div>
+<button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-opacity-90 transition whitespace-nowrap">
+구매하기
+</button>
+</div>
+</nav>
+<!-- 히어로 섹션 -->
+<section class="relative w-full h-[600px] overflow-hidden">
+<div class="absolute inset-0 w-full h-full" style="background-image: url('https://readdy.ai/api/search-image?query=A%20minimalist%2C%20clean%20skincare%20product%20scene%20with%20a%20small%20elegant%20cream%20jar%20on%20a%20light%20marble%20surface.%20The%20background%20shows%20soft%20pastel%20mint%20green%20tones%20with%20delicate%20botanical%20elements.%20The%20scene%20has%20a%20medical%2C%20clinical%20feel%20with%20subtle%20hints%20of%20centella%20asiatica%20leaves.%20The%20lighting%20is%20bright%20and%20airy%2C%20creating%20a%20fresh%2C%20clean%20aesthetic%20perfect%20for%20sensitive%20skin%20products.&width=1600&height=900&seq=1&orientation=landscape'); background-size: cover; background-position: center;"></div>
+<div class="absolute inset-0 hero-gradient"></div>
+<div class="container mx-auto px-6 h-full flex items-center relative z-10">
+<div class="w-full md:w-1/2 space-y-6">
+<h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+작지만 확실한<br>피부 컨디션 회복
+</h1>
+<p class="text-xl text-gray-700">
+TinyCare 리페어크림<br>
+<span class="text-lg">✔ 실리콘 無 ✔ 오일 無 ✔ 민감 피부도 사용 가능</span>
+</p>
+<p class="text-lg text-gray-600 mt-4">
+복합적인 피부 고민을 고려한 저자극 보습·진정 크림
+</p>
+<p class="text-base text-gray-600 mt-2 bg-gray-50 p-4 rounded-lg">
+💬 "붉은기나 트러블로 민감해진 피부에 진정과 수분을 더하고, 건강한 피부 컨디션 회복에 도움을 줍니다."
+</p>
+<div class="flex flex-col sm:flex-row gap-4 pt-4">
+<button class="bg-primary text-white px-8 py-3 rounded-button hover:bg-opacity-90 transition text-lg font-medium whitespace-nowrap">
+지금 구매하기
+</button>
+<button class="border-2 border-primary text-primary px-8 py-3 rounded-button hover:bg-primary hover:bg-opacity-10 transition text-lg font-medium whitespace-nowrap">
+더 알아보기
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 문제 인식 섹션 -->
+<section id="problem" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-16">이런 피부 고민이 있으신가요?</h2>
+<div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<div class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full">
+<i class="ri-emotion-sad-line text-primary ri-xl"></i>
+</div>
+<div>
+<h3 class="text-lg font-medium mb-2">여드름 짠 후 남는 자국이 신경 쓰여요</h3>
+<p class="text-gray-600">트러블 이후 남은 자국과 피부 고민, 시카 성분으로 빠르게 개선합니다.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full">
+<i class="ri-alert-line text-primary ri-xl"></i>
+</div>
+<div>
+<h3 class="text-lg font-medium mb-2">민감한 피부에 아무 크림이나 바르기 무섭다</h3>
+<p class="text-gray-600">피부자극 테스트를 완료했으며, 병품 추출물 기반의 순한 처방으로 민감 피부도 안심하고 사용할 수 있습니다.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full">
+<i class="ri-hospital-line text-primary ri-xl"></i>
+</div>
+<div>
+<h3 class="text-lg font-medium mb-2">피부과 치료 후 재생은 빠르게, 자극은 적게 하고 싶다</h3>
+<p class="text-gray-600">시술 후 민감해진 피부의 빠른 진정과 컨디션 회복을 타이니케어 리페어 크림이 도와드립니다.</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full">
+<i class="ri-drop-line text-primary ri-xl"></i>
+</div>
+<div>
+<h3 class="text-lg font-medium mb-2">오일이나 향료, 실리콘이 들어간 크림은 피하고 싶다</h3>
+<p class="text-gray-600">유해성분 제로, 인공 향, 색소, 실리콘 Free 제품으로 꼭 필요한 성분만 담았습니다.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 솔루션 섹션 -->
+<section id="solution" class="py-20">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-6">TinyCare 리페어크림, 어떤 점이 다른가요?</h2>
+<p class="text-center text-gray-600 max-w-3xl mx-auto mb-16">
+피부과학을 기반으로 개발된 TinyCare 리페어크림은 문제성 피부를 위한 특별한 솔루션을 제공합니다.
+</p>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 bg-gray-100" style="background-image: url('https://readdy.ai/api/search-image?query=Close-up%20of%20centella%20asiatica%20%28gotu%20kola%29%20leaves%20with%20water%20droplets%20in%20a%20clean%2C%20minimalist%20setting%20with%20soft%20lighting.%20The%20image%20has%20a%20medical%2C%20clinical%20feel%20with%20a%20light%20green%20background.%20Perfect%20for%20showcasing%20botanical%20skincare%20ingredients.&width=600&height=400&seq=2&orientation=landscape'); background-size: cover; background-position: center;"></div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-plant-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-lg font-medium mb-2">100% 병풀잎수 + 알란토인 진정</h3>
+<p class="text-gray-600">순수 병풀잎수와 알란토인의 완벽한 조합으로 민감한 피부를 즉각적으로 진정시켜 줍니다.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 bg-gray-100" style="background-image: url('https://readdy.ai/api/search-image?query=Close-up%20of%20a%20laboratory%20extraction%20of%20centella%20asiatica%20compounds%2C%20showing%20scientific%20equipment%20with%20green%20botanical%20extracts%20in%20test%20tubes.%20The%20scene%20has%20a%20clean%2C%20clinical%20aesthetic%20with%20soft%20lighting%20and%20a%20white%20background%2C%20perfect%20for%20showcasing%20skincare%20ingredient%20extraction.&width=600&height=400&seq=3&orientation=landscape'); background-size: cover; background-position: center;"></div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-test-tube-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-lg font-medium mb-2">센텔라아시아티카 장량추출물+마데카소사이드 손상피부 개선 & 진정 케어</h3>
+<p class="text-gray-600">고농축으로 함유된 센텔라아시아티카 정량추출물, 마데카소사이드 처방은 예민해진 피부를 빠르게 진정시키고, 손상 피부를 개산하는 데 도움을 줍니다.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 bg-gray-100" style="background-image: url('https://readdy.ai/api/search-image?query=Microscopic%20visualization%20of%20skin%20barrier%20with%20ceramides%2C%20showing%20a%20close-up%20of%20skin%20cells%20with%20a%20protective%20layer.%20The%20image%20has%20a%20clean%2C%20scientific%20aesthetic%20with%20soft%20blue%20and%20white%20tones%2C%20perfect%20for%20illustrating%20skincare%20science%20and%20skin%20barrier%20function.&width=600&height=400&seq=4&orientation=landscape'); background-size: cover; background-position: center;"></div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-shield-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-lg font-medium mb-2">세라마이드 + 판테놀 피부 장벽 강화</h3>
+<p class="text-gray-600">세라마이드와 판테놀이 손상된 피부 장벽을 강화하여 외부 자극으로부터 피부를 보호합니다.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden">
+<div class="h-48 bg-gray-100" style="background-image: url('https://readdy.ai/api/search-image?query=Clean%20laboratory%20setting%20showing%20pH%20testing%20of%20skincare%20products%2C%20with%20a%20pH%20meter%20displaying%205.8.%20The%20scene%20features%20minimalist%20white%20and%20light%20green%20elements%2C%20with%20scientific%20equipment%20and%20a%20small%20cream%20sample%20being%20tested.%20Perfect%20for%20illustrating%20the%20acid%20mantle%20of%20skin-friendly%20products.&width=600&height=400&seq=5&orientation=landscape'); background-size: cover; background-position: center;"></div>
+<div class="p-6">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-forbid-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-lg font-medium mb-2">실리콘 無, 오일 無, 정제수 無, 약산성 PH 5.8</h3>
+<p class="text-gray-600">자극적인 성분을 배제하고 피부 친화적인 약산성 포뮬러로 설계되어 민감한 피부도 안심하고 사용할 수 있습니다.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 리뷰 섹션 -->
+<section id="review" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-16">사용자 후기</h2>
+<div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=Portrait%20of%20a%20Korean%20woman%20in%20her%20mid-30s%20with%20clear%20skin%2C%20wearing%20a%20white%20medical%20coat%2C%20looking%20professional%20and%20confident.%20Natural%20lighting%2C%20clean%20medical%20office%20background.&width=100&height=100&seq=11&orientation=squarish" alt="사용자" class="w-full h-full object-cover object-top">
+</div>
+<div>
+<h4 class="font-medium">서민아</h4>
+<p class="text-sm text-gray-500">35세 / 시술 후기</p>
+</div>
+</div>
+<div class="text-primary mb-3">★★★★★</div>
+<p class="text-gray-700">피부과 시술 후 자극 없이 사용할 수 있었어요. 민감해진 피부에도 부담 없이 발랐더니 피부가 편안해졌어요.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=Portrait%20of%20a%20Korean%20woman%20in%20her%20late%2020s%20with%20natural%20glowing%20skin%2C%20looking%20fresh%20and%20content.%20Natural%20lighting%2C%20minimalist%20background.&width=100&height=100&seq=12&orientation=squarish" alt="사용자" class="w-full h-full object-cover object-top">
+</div>
+<div>
+<h4 class="font-medium">이지원</h4>
+<p class="text-sm text-gray-500">28세 / 일상 사용</p>
+</div>
+</div>
+<div class="text-primary mb-3">★★★★★</div>
+<p class="text-gray-700">트러블이 올라오거나 피부 진정이 필요할 때 타이니케어 리페어 크림만한 크림이 없어요. 벌써 몇개째 쓰고 있는지 모르겠어요.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="flex items-center mb-4">
+<div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+<img src="https://readdy.ai/api/search-image?query=Portrait%20of%20a%20Korean%20woman%20in%20her%20early%2030s%20with%20combination%20skin%2C%20looking%20natural%20and%20relaxed.%20Natural%20lighting%2C%20simple%20background.&width=100&height=100&seq=13&orientation=squarish" alt="사용자" class="w-full h-full object-cover object-top">
+</div>
+<div>
+<h4 class="font-medium">김유진</h4>
+<p class="text-sm text-gray-500">32세 / 제품 사용감</p>
+</div>
+</div>
+<div class="text-primary mb-3">★★★★★</div>
+<p class="text-gray-700">백탁이 있지만 가볍게 흡수돼요. 실리콘이 없어서 처음엔 낯설었지만, 오히려 피부가 숨 쉬는 느낌이에요.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 비포 애프터 섹션 -->
+<section class="py-20">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-6">7일 리페어 프로그램의 변화</h2>
+<p class="text-center text-gray-600 max-w-3xl mx-auto mb-16">
+사용 전과 후 피부의 붉은기, 결, 진정력의 차이를 확인하세요
+</p>
+<div class="flex flex-col md:flex-row gap-8 max-w-5xl mx-auto">
+<div class="flex-1 bg-white rounded-lg shadow-md overflow-hidden">
+<div class="relative">
+<div class="absolute top-4 left-4 bg-gray-800 text-white px-4 py-1 rounded-full text-sm">Before</div>
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20skin%20with%20visible%20redness%2C%20irritation%2C%20and%20acne%20marks.%20The%20image%20shows%20inflamed%20skin%20with%20post-acne%20marks%20and%20uneven%20texture%20in%20clinical%20lighting%20against%20a%20neutral%20background.%20The%20photo%20has%20a%20medical%2C%20dermatological%20quality%20showing%20skin%20concerns%20before%20treatment.&width=600&height=400&seq=9&orientation=landscape" alt="사용 전" class="w-full h-64 object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-lg font-medium mb-2">Day 1: 사용 전</h3>
+<ul class="space-y-2 text-gray-700">
+<li class="flex items-start">
+<i class="ri-close-circle-line text-red-500 mr-2 mt-1"></i>
+<span>트러블 자국으로 인한 붉은 반점</span>
+</li>
+<li class="flex items-start">
+<i class="ri-close-circle-line text-red-500 mr-2 mt-1"></i>
+<span>피부 결 불균일</span>
+</li>
+<li class="flex items-start">
+<i class="ri-close-circle-line text-red-500 mr-2 mt-1"></i>
+<span>피부 장벽 약화로 민감해진 피부</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="flex-1 bg-white rounded-lg shadow-md overflow-hidden">
+<div class="relative">
+<div class="absolute top-4 left-4 bg-primary text-white px-4 py-1 rounded-full text-sm">After</div>
+<img src="https://readdy.ai/api/search-image?query=Close-up%20of%20healthy%2C%20calmed%20skin%20with%20significantly%20reduced%20redness%20and%20improved%20texture.%20The%20image%20shows%20clear%2C%20even-toned%20skin%20with%20minimal%20visible%20marks%20in%20clinical%20lighting%20against%20a%20neutral%20background.%20The%20photo%20has%20a%20medical%2C%20dermatological%20quality%20showing%20skin%20improvement%20after%20treatment.&width=600&height=400&seq=10&orientation=landscape" alt="사용 후" class="w-full h-64 object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="text-lg font-medium mb-2">Day 7: 사용 후</h3>
+<ul class="space-y-2 text-gray-700">
+<li class="flex items-start">
+<i class="ri-check-line text-primary mr-2 mt-1"></i>
+<span>붉은 자국 현저히 감소</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mr-2 mt-1"></i>
+<span>피부 결 개선 및 매끄러워진 피부</span>
+</li>
+<li class="flex items-start">
+<i class="ri-check-line text-primary mr-2 mt-1"></i>
+<span>강화된 피부 장벽으로 외부 자극에 덜 민감해짐</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 사용법 섹션 -->
+<section id="usage" class="py-20 bg-gray-50">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-16">사용 방법</h2>
+<div class="max-w-4xl mx-auto">
+<div class="flex flex-col md:flex-row items-center justify-between">
+<div class="flex flex-col items-center mb-8 md:mb-0">
+<div class="w-20 h-20 flex items-center justify-center bg-white rounded-full shadow-md mb-4">
+<i class="ri-drop-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-lg font-medium text-center">1. 세안</h3>
+<p class="text-sm text-gray-600 text-center mt-2">순한 클렌저로<br>깨끗하게 세안</p>
+</div>
+<div class="hidden md:block w-8 h-1 md:w-1 md:h-8 bg-gray-300"></div>
+<div class="flex flex-col items-center mb-8 md:mb-0">
+<div class="w-20 h-20 flex items-center justify-center bg-white rounded-full shadow-md mb-4">
+<i class="ri-water-flash-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-lg font-medium text-center">2. 토너</h3>
+<p class="text-sm text-gray-600 text-center mt-2">무알콜 토너로<br>피부 진정</p>
+</div>
+<div class="hidden md:block w-8 h-1 md:w-1 md:h-8 bg-gray-300"></div>
+<div class="flex flex-col items-center mb-8 md:mb-0">
+<div class="w-20 h-20 flex items-center justify-center bg-white rounded-full shadow-md mb-4">
+<i class="ri-flask-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-lg font-medium text-center">3. 에센스</h3>
+<p class="text-sm text-gray-600 text-center mt-2">필요시 가벼운<br>에센스 사용</p>
+</div>
+<div class="hidden md:block w-8 h-1 md:w-1 md:h-8 bg-gray-300"></div>
+<div class="flex flex-col items-center mb-8 md:mb-0">
+<div class="w-20 h-20 flex items-center justify-center bg-gradient-to-br from-primary to-secondary rounded-full shadow-md mb-4">
+<i class="ri-medicine-bottle-line text-white ri-2x"></i>
+</div>
+<h3 class="text-lg font-medium text-center">4. 리페어크림</h3>
+<p class="text-sm text-gray-600 text-center mt-2">TinyCare 리페어크림<br>적당량 바르기</p>
+</div>
+<div class="hidden md:block w-8 h-1 md:w-1 md:h-8 bg-gray-300"></div>
+<div class="flex flex-col items-center">
+<div class="w-20 h-20 flex items-center justify-center bg-white rounded-full shadow-md mb-4">
+<i class="ri-sun-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-lg font-medium text-center">5. 마무리</h3>
+<p class="text-sm text-gray-600 text-center mt-2">낮에는 선크림<br>추가 사용</p>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md mt-16">
+<h3 class="text-lg font-medium mb-4 flex items-center">
+<i class="ri-lightbulb-line text-primary mr-2"></i>
+사용 팁
+</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-primary mr-2 mt-1"></i>
+<span>트러블 및 여드름 압출 후 사용시 피부 진정 및 손상피부 개선의 도움을 줍니다.</span>
+</li>
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-primary mr-2 mt-1"></i>
+<span>지성 피부부터 트러블&민감성 피부까지 매일 바르기 좋은 시카재생크림 입니다.</span>
+</li>
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-primary mr-2 mt-1"></i>
+<span>백탁이 있지만 가볍게 두드리면 빠르게 흡수됩니다.</span>
+</li>
+<li class="flex items-start">
+<i class="ri-checkbox-circle-line text-primary mr-2 mt-1"></i>
+<span>진정이 필요한 부위에 두껍게 바르고 10분 후 티슈로 가볍게 눌러 과한 양을 제거하면 집중 케어가 가능해요.</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ 섹션 -->
+<section id="faq" class="py-20">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-center mb-16">자주 묻는 질문</h2>
+<div class="max-w-3xl mx-auto space-y-4">
+<div class="border border-gray-200 rounded-lg overflow-hidden">
+<div class="accordion-header bg-white p-4 flex justify-between items-center cursor-pointer">
+<h3 class="text-lg font-medium">하얗게 뜨는 건 왜 그런가요?</h3>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-arrow-down-s-line accordion-icon"></i>
+</div>
+</div>
+<div class="accordion-content bg-gray-50 p-4 border-t border-gray-200">
+<p class="text-gray-700">실리콘오일을 첨가하지 않아 발림성이 뻑뻑하게 느껴질 수 있으나 가볍게 문지르면 흡수됩니다.</p>
+</div>
+</div>
+<div class="border border-gray-200 rounded-lg overflow-hidden">
+<div class="accordion-header bg-white p-4 flex justify-between items-center cursor-pointer">
+<h3 class="text-lg font-medium">효과가 있나요?</h3>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-arrow-down-s-line accordion-icon"></i>
+</div>
+</div>
+<div class="accordion-content bg-gray-50 p-4 border-t border-gray-200">
+<p class="text-gray-700">원료의 특성상 피부 진정과 보습에 도움을 줄 수 있으며, 효과는 피부 상태에 따라 개인차가 있습니다.</p>
+</div>
+</div>
+<div class="bg-gray-50 p-6 rounded-lg mt-8 border border-gray-200">
+<p class="text-sm text-gray-600 mb-2">* 화장품은 질병의 예방 및 치료를 위한 의약품이 아닙니다.</p>
+<p class="text-sm text-gray-600">* 모든 내용은 제품의 원료적 특성 및 소비자 경험을 기반으로 작성되었으며, 개인차가 있을 수 있습니다.</p>
+</div>
+<div class="border border-gray-200 rounded-lg overflow-hidden">
+<div class="accordion-header bg-white p-4 flex justify-between items-center cursor-pointer">
+<h3 class="text-lg font-medium">언제 사용하면 좋은가요?</h3>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-arrow-down-s-line accordion-icon"></i>
+</div>
+</div>
+<div class="accordion-content bg-gray-50 p-4 border-t border-gray-200">
+<p class="text-gray-700">여드름 짠 후, 피부과 시술 후, 붉은 피부 진정 시 사용하세요. 특히 여드름을 짠 직후 바르면 다음날 붉은기가 현저히 줄어들고, 레이저나 필링 같은 피부과 시술 후에도 회복을 도와줍니다. 일상적으로는 스킨케어 마지막 단계에서 사용하시면 됩니다.</p>
+</div>
+</div>
+<div class="border border-gray-200 rounded-lg overflow-hidden">
+<div class="accordion-header bg-white p-4 flex justify-between items-center cursor-pointer">
+<h3 class="text-lg font-medium">임신 중에도 사용 가능한가요?</h3>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-arrow-down-s-line accordion-icon"></i>
+</div>
+</div>
+<div class="accordion-content bg-gray-50 p-4 border-t border-gray-200">
+<p class="text-gray-700">네, 임신 중에도 안심하고 사용하실 수 있습니다. TinyCare 리페어크림은 유해 성분을 배제하고 순한 성분으로만 구성되어 있어 임산부도 사용 가능합니다. 다만, 개인 피부 상태에 따라 다를 수 있으니 심한 피부 트러블이 있으시다면 전문의와 상담 후 사용을 권장합니다.</p>
+</div>
+</div>
+<div class="border border-gray-200 rounded-lg overflow-hidden">
+<div class="accordion-header bg-white p-4 flex justify-between items-center cursor-pointer">
+<h3 class="text-lg font-medium">남성도 사용할 수 있나요?</h3>
+<div class="w-6 h-6 flex items-center justify-center">
+<i class="ri-arrow-down-s-line accordion-icon"></i>
+</div>
+</div>
+<div class="accordion-content bg-gray-50 p-4 border-t border-gray-200">
+<p class="text-gray-700">물론입니다. TinyCare 리페어크림은 성별에 관계없이 모든 분들이 사용할 수 있습니다. 특히 면도 후 자극받은 피부, 여드름이 자주 발생하는 남성 피부에도 효과적입니다. 오일프리 포뮬러라 번들거림 없이 산뜻하게 마무리되어 남성분들도 부담 없이 사용하실 수 있습니다.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA 섹션 -->
+<section class="py-20 bg-gradient-to-r from-primary/5 via-secondary/5 to-primary/5">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-3xl font-bold mb-6">TinyCare 리페어크림과 함께 건강한 피부로</h2>
+<p class="text-gray-700 max-w-2xl mx-auto mb-10">
+피부 진정과 보습에 도움을 주는 성분을 담아 피부 컨디션 회복을 돕는 제품입니다.
+<span class="text-xs block mt-2">※ 개인의 피부 상태에 따라 사용감과 만족도에 차이가 있을 수 있습니다.</span>
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-white px-8 py-3 rounded-button hover:bg-opacity-90 transition text-lg font-medium whitespace-nowrap">
+지금 구매하기
+</button>
+<button class="border-2 border-primary text-primary px-8 py-3 rounded-button hover:bg-primary hover:bg-opacity-10 transition text-lg font-medium whitespace-nowrap">
+상담문의
+</button>
+</div>
+<div class="mt-12 flex flex-wrap justify-center gap-8">
+<div class="flex items-center">
+<i class="ri-truck-line text-gray-600 ri-lg mr-2"></i>
+<span class="text-gray-700">3만원 이상 무료배송</span>
+</div>
+<div class="flex items-center">
+<i class="ri-shield-check-line text-gray-600 ri-lg mr-2"></i>
+<span class="text-gray-700">100% 정품 보장</span>
+</div>
+<div class="flex items-center">
+<i class="ri-calendar-check-line text-gray-600 ri-lg mr-2"></i>
+<span class="text-gray-700">14일 이내 교환/환불</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 푸터 -->
+<footer class="bg-gray-800 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block">TinyCare</a>
+<p class="text-gray-400 mt-2">
+문제성 피부를 위한 특별한 솔루션,<br>
+TinyCare가 함께합니다.
+</p>
+<div class="flex space-x-4 mt-4">
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition">
+<i class="ri-youtube-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition">
+<i class="ri-kakao-talk-fill"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-medium mb-4">쇼핑 정보</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition">신제품</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">베스트셀러</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">세트 상품</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">선물 추천</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-medium mb-4">고객 지원</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white transition">자주 묻는 질문</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">배송 정책</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">교환 및 환불</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition">문의하기</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-lg font-medium mb-4">뉴스레터 구독</h3>
+<p class="text-gray-400 mb-4">최신 제품 소식과 특별 할인 정보를 받아보세요.</p>
+<form class="flex">
+<input type="email" placeholder="이메일 주소" class="bg-gray-700 text-white px-4 py-2 rounded-l-button border-none focus:outline-none focus:ring-2 focus:ring-primary w-full">
+<button type="submit" class="bg-primary text-white px-4 py-2 rounded-r-button hover:bg-opacity-90 transition whitespace-nowrap">구독하기</button>
+</form>
+</div>
+</div>
+<div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0">
+© 2025 TinyCare. All rights reserved.
+</p>
+<div class="flex space-x-4">
+<a href="#" class="text-gray-400 hover:text-white transition text-sm">이용약관</a>
+<a href="#" class="text-gray-400 hover:text-white transition text-sm">개인정보처리방침</a>
+<a href="#" class="text-gray-400 hover:text-white transition text-sm">사업자정보</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+accordionHeaders.forEach(header => {
+header.addEventListener('click', function() {
+const content = this.nextElementSibling;
+const icon = this.querySelector('.accordion-icon');
+if (content.classList.contains('active')) {
+content.classList.remove('active');
+icon.classList.remove('ri-arrow-up-s-line');
+icon.classList.add('ri-arrow-down-s-line');
+} else {
+content.classList.add('active');
+icon.classList.remove('ri-arrow-down-s-line');
+icon.classList.add('ri-arrow-up-s-line');
+}
+});
+});
+});
+</script>
+</body>
+</html>
